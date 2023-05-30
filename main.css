@@ -1,0 +1,6 @@
+.link-icon { position: relative; display: inline-block; width: 50px;    font-size: 14px; font-weight: 500; color: #333; margin-right: 10px; padding-top: 50px; }
+.link-icon.twitter { background-image: url(./images/icon-twitter.png); background-repeat: no-repeat; }
+.link-icon.facebook { background-image: url(./images/icon-facebook.png); background-repeat: no-repeat; } 
+.link-icon.kakao { background-image: url(./images/icon-kakao.png); background-repeat: no-repeat; }
+.link-icon.instagram { background-image: url(./images/icon-instagram.jpg); background-repeat: no-repeat; }
+.link-icon.url { background-image: url(./images/icon-url.png); background-repeat: no-repeat; }

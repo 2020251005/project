@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yummiverse-share</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style type = "text/css">
+        </style>
+
+    </head>
+    <body>
+        <h3>레시피가 나오는 곳</h3><br><br>
+        <div class="share">
+            <p>레시피 공유</p>
+            <a id="button_Url" class="link-icon url" href="javascript:shareUrl();"></a><!--url복사-->
+            <a id="button_Kakao" class="link-icon kakao" href="javascript:shareKakao();"></a><!--카카오톡-->
+            <a id="button_Instagram" class="link-icon instagram" href="javascript:shareInstagram();"></a><!--인스타그램-->
+            <a id="button_Facebook" class="link-icon facebook" href="javascript:shareFacebook();"></a><!--페이스북-->
+            <a id="button_Twitter" class="link-icon twitter" href="javascript:shareTwitter();"></a><!--트위터-->
+        </div>
+        <script>
+            //주소는 일단 그냥 네이버로 다 넣어뒀습니다
+            function shareTwitter() {
+                var sendText = "Yummiverse에서 레시피를 공유해준뎅~!~!";
+                var sendUrl = "https://www.naver.com/"; //전달할 URL임=현재 레시피가 나와있는 주소. 일단 임의로 네이버로 넣어둠...
+                window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+            }
+            
+            function shareFacebook() {
+                var sendUrl = "https://www.naver.com/"; //전달할 URL임=현재 레시피가 나와있는 주소. 일단 임의로 네이버로 넣어둠...
+                window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+            }
+
+            //https://developers.kakao.com/docs/latest/ko/message/js
+            //https://www.instagram.com/developer/
+            //카카오톡과 인스타그램은 공유하려면 회원가입/어플리케이션등록 절차가 필요합니다
+        </script>
+    </body>
+</html>
